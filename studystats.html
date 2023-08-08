@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0062ffff" fill-opacity="1" d="M0,128L20,160C40,192,80,256,120,234.7C160,213,200,107,240,85.3C280,64,320,128,360,128C400,128,440,64,480,64C520,64,560,128,600,149.3C640,171,680,149,720,122.7C760,96,800,64,840,69.3C880,75,920,117,960,149.3C1000,181,1040,203,1080,213.3C1120,224,1160,224,1200,197.3C1240,171,1280,117,1320,128C1360,139,1400,213,1420,250.7L1440,288L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+
+        <div class="navigation">
+            <div class="brand">
+                <h1> Study 
+                </h1>
+                <h2>
+                    Stats
+                </h2>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="photo">
+                <img src="lol1.svg">
+            </div>
+
+            <div class="form-cont">
+                <div class="inner-form">
+                    <img src="lol.svg" alt="avatar" srcset="">
+
+                    
+
+                    <div class="input-area">
+                        <form action="" method="post">
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div>
+                                <span>Forget Passwoard? <a href="#">Click Here</a></span>
+                            </div>
+                            <button class="btn">Login</button>
+                            <span>Don't have account? <a href="#">Register Here</a></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let toggler = document.querySelector('.toggle');
+        let menu = document.querySelector('.nav-menu');
+        let close = document.querySelector('.close');
+
+
+        toggler.addEventListener('click', () =>{
+            menu.style.display ='block';
+            console.log('clicked')
+        });
+
+        close.addEventListener('click', () =>{
+            menu.style.display = '';
+            cons
+        });
+    </script>
+</body>
+</html>
